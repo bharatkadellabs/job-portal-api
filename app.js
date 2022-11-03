@@ -15,4 +15,4 @@ app.use(express.urlencoded({ extended: false }));
 //To allow cross-origin requests
 app.use(cors());
 app.use("/", indexRouter);
-app.listen(port, (res) => console.log(`running on ports ${port}`, res))
+app.listen(port, () => console.log(`running on ports ${port}`))
