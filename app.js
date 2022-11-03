@@ -8,7 +8,6 @@ const url = process.env.DB_URL
 mongoose.connect(url).then((res) => console.log("connect Data base"));
 const port = 8000;
 const path = require('path')
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // app.use(express.static(path.join(__dirname, "public")));
