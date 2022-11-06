@@ -14,4 +14,5 @@ app.use(express.static(path.join(__dirname, "public")));
 //To allow cross-origin requests
 app.use(cors());
 app.use("/", indexRouter);
+
 app.listen(port, () => console.log(`running on ports ${port}`))
